@@ -1,0 +1,13 @@
+openapi: 3.0.3
+info:
+  description: Symfi backend service API
+  title: Symfi API
+  version: 3.0.0
+paths:
+  /v3/ping:
+    get:
+      description: Check the health of the server
+      summary: Health check endpoint
+      responses:
+        200:
+          description: Server is healthy

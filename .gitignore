@@ -1,10 +1,2 @@
-# dependencies
-/.env
-/node_modules
-
 # editors
 /.idea
-
-# temp
-/cache
-/dist
