@@ -1,2 +1,5 @@
+# build artifacts
+/.env
+
 # editors
 /.idea
