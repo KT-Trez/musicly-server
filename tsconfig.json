@@ -1,33 +1,41 @@
 {
   "compilerOptions": {
     "allowJs": false,
-    "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
+    "baseUrl": "src",
     "forceConsistentCasingInFileNames": true,
-    "inlineSourceMap": false,
+    "esModuleInterop": true,
     "lib": [
-      "ESNext"
+      "es2022"
     ],
-    "listEmittedFiles": true,
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "moduleDetection": "force",
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": true,
-    "pretty": true,
+    "outDir": "dist",
+    "paths": {
+      "@controllers": [
+        "controllers"
+      ],
+      "@resources": [
+        "resources"
+      ],
+      "@routers": [
+        "routers"
+      ],
+      "@services": [
+        "services"
+      ],
+      "@types": [
+        "types"
+      ]
+    },
+    "resolveJsonModule": true,
     "skipLibCheck": true,
+    "sourceMap": false,
     "strict": true,
-    "traceResolution": false,
-    "types": [
-      "node",
-      "jest"
-    ]
+    "target": "ES2022"
   },
-  "exclude": [
-    "dist",
-    "node_modules",
-    "tests"
-  ],
   "include": [
     "src"
   ]
